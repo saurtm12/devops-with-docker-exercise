@@ -1,0 +1,2 @@
+ docker exec 3df3bbad32e6 tail -f ./text.log
+You can find the source code here: https://github.com/docker-hy

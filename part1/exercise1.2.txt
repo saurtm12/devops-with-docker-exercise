@@ -1,0 +1,27 @@
+$ docker image ls
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    60c8a892f36f   7 weeks ago   192MB
+[node1] (local) root@192.168.0.13 ~
+$ docker remove -f 8208f9a79b27 6a89444e42f9 0781a6df8230
+8208f9a79b27
+6a89444e42f9
+0781a6df8230
+[node1] (local) root@192.168.0.13 ~
+$ docker image rm nginx
+Untagged: nginx:latest
+Untagged: nginx@sha256:bc5eac5eafc581aeda3008b4b1f07ebba230de2f27d47767129a6a905c84f470
+Deleted: sha256:60c8a892f36faf6c9215464005ee6fb8cf0585f70b113c0b030f6cb497a41876
+Deleted: sha256:47984982982b32672d3b0cc6ebc1016e70916a8347c79765dc2ba09ed9afc97c
+Deleted: sha256:f8fffef24ebb396c3e1721168923665f594d6b0ec1270700f642155fb51179cb
+Deleted: sha256:ceff183e9da02c76af52712096cbe7e26e01909f827f18141058afbf4f7e32db
+Deleted: sha256:01c22c5216c94ae4a6285e21b0ccb6bb786d437aa7eb7d3e2de8a454115d17a8
+Deleted: sha256:9a980991ece0116dad7650d5af48faa2f693f9277bfd99f4fb3c8c2ce0b4e27d
+Deleted: sha256:d775439dbfb804d168b7ab8501c32013896d40d66b14944d2429778d995c7fe4
+Deleted: sha256:c3548211b8264f8bfa47a6727043a64f1791b82ac965a284a7ea187e971a95e2
+
+[node1] (local) root@192.168.0.13 ~
+$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[node1] (local) root@192.168.0.13 ~
+$ docker image ls
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
